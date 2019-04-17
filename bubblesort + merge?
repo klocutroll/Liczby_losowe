@@ -1,0 +1,35 @@
+import random
+
+def generate_list(size):
+    my_list=[random.randint(10,100) for i in range(size)]
+    return my_list
+
+
+def sortowanie(args):
+    for i in range(len(args)):
+        for j in range(len(args)-i-1):
+            if args[j] > args[j+1]:
+                b = args[j]
+                args[j] = args[j+1]
+                args[j+1] = b
+    return args
+
+
+def sortscal(args)
+    if len(args)>2
+        x = len(args)/2
+        for i in range x:
+            args1[i]=args[i]
+            sortscal(args1)
+        for i in range(len(args)-x):
+            args2[i]=args[x+i]
+    if
+
+
+if __name__=='__main__':
+    mylist = generate_list(5)
+    mylist2 = generate_list(10)
+    print(mylist)
+    print(mylist2)
+    print(sortowanie(mylist))
+    print(sortowanie(mylist2))
